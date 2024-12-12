@@ -1,0 +1,12 @@
+Create Scrapy Project:
+    scrapy startproject <project-name>
+
+Create spider with specified website for web scraping:
+    scrapy genspider <spider-name> <web-site-url>
+
+Run spider commands:
+    scrapy crawl <spider-name>
+
+List Available Spiders:
+    scrapy list
+
