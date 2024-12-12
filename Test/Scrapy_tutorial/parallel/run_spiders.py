@@ -2,13 +2,13 @@ from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
 output_path = 'Outputs/'
-# Scrapy ayarlarını al
+# Scrapy ayarlarını al.
 settings = get_project_settings()
 
-# CrawlerProcess başlat
+# CrawlerProcess başlat.
 process = CrawlerProcess(settings)
 
-# Spider'lar ve çıktı dosyalarını tanımlayın
+# Spider'lar ve çıktı dosyalarını tanımla.
 spiders = [
     {'name': 'api_example', 'output': output_path + 'output_api_example.json'},
     {'name': 'multipage', 'output': output_path + 'output_multipage.json'},
@@ -25,7 +25,7 @@ for spider in spiders:
     })
     process.crawl(spider['name'])
 
-# Spider'ları çalıştır
+# Spider'ları çalıştır.
 process.start()
 
 """

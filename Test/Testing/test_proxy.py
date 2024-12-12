@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 proxies = os.getenv("PROXIES").split(", ")
-# Test edilecek URL
+# Test edilecek URL.
 url = 'https://httpbin.org/ip'  # Bu site, gelen isteğin IP adresini döndürür.
 
 # Proxy'leri tek tek test et

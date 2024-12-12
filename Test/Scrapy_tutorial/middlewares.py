@@ -146,7 +146,7 @@ class RandomUserAgentAndProxyMiddleware:
         self.filtered_proxies = self.filter_working_proxies(self.proxies)
 
     def filter_working_proxies(self, proxies):
-        # Çalışan proxy'leri test et
+        # Çalışan proxy'leri test et.
         working_proxies = []
         test_url = "https://httpbin.org/ip"
         for proxy in proxies:
